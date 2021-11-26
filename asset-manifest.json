@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/d24-music/static/css/main.6c077a41.chunk.css",
+    "main.js": "/d24-music/static/js/main.c082ed38.chunk.js",
+    "main.js.map": "/d24-music/static/js/main.c082ed38.chunk.js.map",
+    "runtime-main.js": "/d24-music/static/js/runtime-main.cfeb31b1.js",
+    "runtime-main.js.map": "/d24-music/static/js/runtime-main.cfeb31b1.js.map",
+    "static/css/2.4659568d.chunk.css": "/d24-music/static/css/2.4659568d.chunk.css",
+    "static/js/2.2d681608.chunk.js": "/d24-music/static/js/2.2d681608.chunk.js",
+    "static/js/2.2d681608.chunk.js.map": "/d24-music/static/js/2.2d681608.chunk.js.map",
+    "index.html": "/d24-music/index.html",
+    "static/css/2.4659568d.chunk.css.map": "/d24-music/static/css/2.4659568d.chunk.css.map",
+    "static/css/main.6c077a41.chunk.css.map": "/d24-music/static/css/main.6c077a41.chunk.css.map",
+    "static/js/2.2d681608.chunk.js.LICENSE.txt": "/d24-music/static/js/2.2d681608.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cfeb31b1.js",
+    "static/css/2.4659568d.chunk.css",
+    "static/js/2.2d681608.chunk.js",
+    "static/css/main.6c077a41.chunk.css",
+    "static/js/main.c082ed38.chunk.js"
+  ]
+}
