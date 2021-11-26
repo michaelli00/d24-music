@@ -1,0 +1,7 @@
+.App .form-row {
+  display: flex;
+}
+
+.App .form-row input {
+  width: 200px;
+}
