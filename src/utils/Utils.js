@@ -22,28 +22,28 @@ export const convertToNotationTriad = triad => {
 const mapVertex = (note, windowWidth, windowHeight) => {
   switch (note) {
     case 0:
-      return [windowWidth/3, windowHeight/3 - 195];
+      return [windowWidth*0.3, windowHeight/3 - 195];
     case 1:
-      return [windowWidth/3 + 100, windowHeight/3 - 170];
+      return [windowWidth*0.3 + 100, windowHeight/3 - 170];
     case 2: 
-      return [windowWidth/3 + 170, windowHeight/3 - 100];
+      return [windowWidth*0.3 + 170, windowHeight/3 - 100];
     case 3: 
-      return [windowWidth/3 + 195, windowHeight/3];
+      return [windowWidth*0.3 + 195, windowHeight/3];
     case 4: 
-      return [windowWidth/3 + 170, windowHeight/3 + 100];
+      return [windowWidth*0.3 + 170, windowHeight/3 + 100];
     case 5: 
-      return [windowWidth/3 + 100, windowHeight/3 + 170];
+      return [windowWidth*0.3 + 100, windowHeight/3 + 170];
     case 6: 
-      return [windowWidth/3, windowHeight/3 + 195];
+      return [windowWidth*0.3, windowHeight/3 + 195];
     case 7: 
-      return [windowWidth/3 - 100, windowHeight/3 + 170];
+      return [windowWidth*0.3 - 100, windowHeight/3 + 170];
     case 8: 
-      return [windowWidth/3 - 170, windowHeight/3 + 100];
+      return [windowWidth*0.3 - 170, windowHeight/3 + 100];
     case 9: 
-      return [windowWidth/3 - 195, windowHeight/3];
+      return [windowWidth*0.3 - 195, windowHeight/3];
     case 10: 
-      return [windowWidth/3 - 170, windowHeight/3 - 100];
+      return [windowWidth*0.3 - 170, windowHeight/3 - 100];
     case 11: 
-      return [windowWidth/3 - 100, windowHeight/3 - 170];
+      return [windowWidth*0.3 - 100, windowHeight/3 - 170];
   }
 };

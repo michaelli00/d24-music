@@ -43,7 +43,7 @@ class App extends React.Component {
 
         </Row>
         <Row className="blurb">
-          <p className="link-paragraph">Below are links to the tools for the T/I Group and PLR Group discussed in the paper (also can be navigated to from the navbar on top)</p>
+          <p className="link-paragraph">Below are links to the tools I developed for the T/I Group and PLR Group discussed in the paper (also can be navigated to from the navbar on top)</p>
           <ul>
             <li> <NavLink to="/ti" className="nav-link">T/I Group</NavLink></li>
             <li> <NavLink to="/plr" className="nav-link">PLR Group</NavLink> </li>
