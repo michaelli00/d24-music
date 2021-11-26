@@ -46,3 +46,5 @@ export const MAJOR_TRIADS_MAPPING = [
 ];
 
 export const C_MAJOR_TRIAD = [0, 4, 7];
+
+export const TWELVE_TONE_TO_NOTE_MAPPING = ['C', '^C', 'D', '_E', 'E', 'F', '^F', 'G', '_A', 'A', '_B', 'B']

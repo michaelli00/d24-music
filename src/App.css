@@ -1,7 +1,26 @@
-.App .form-row {
-  display: flex;
+.App .row-title {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
-.App .form-row input {
-  width: 200px;
+.App .row-title .title {
+  font-weight: bold;
+}
+
+.App .blurb {
+  font-size: 20px;
+}
+
+.App .blurb ul {
+  margin-left: 40px;
+}
+
+.App .blurb ul .nav-link {
+  padding-left: 5px;
+}
+
+
+.App .blurb .link-paragraph {
+  margin-top: 30px;
 }

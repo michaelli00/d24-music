@@ -1,0 +1,58 @@
+.TIGroup .row-title {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.TIGroup .row-title .title {
+  font-weight: bold;
+}
+
+.TIGroup .blurb {
+  font-size: 20px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 40px;
+}
+
+.TIGroup .blurb ul {
+  margin-left: 40px;
+}
+
+.TIGroup .blurb ul > li > ul {
+  margin-left: 0px;
+}
+
+.TIGroup .blurb ul > li > ul > li{
+  padding-top: 10px;
+}
+
+.TIGroup .form-row {
+  display: flex;
+}
+
+.TIGroup .input-row .form-label {
+  font-size: 20px;
+}
+
+.TIGroup .form-row input {
+  width: 200px;
+}
+
+.TIGroup .notation-col {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.TIGroup .notation-col > div {
+  width: 250px; 
+}
+
+.TIGroup .input-row .left-col > form > div {
+  float: right;
+  margin-right: 100px;
+}
+
+.TIGroup .input-row .right-col > form > div {
+  margin-left: 100px;
+}
