@@ -8,6 +8,7 @@ import {
 import App from './App';
 import Header from './components/Header/Header';
 import TIGroup from './components/TIGroup/TIGroup';
+import PLRGroup from './components/PLRGroup/PLRGroup';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'katex/dist/katex.min.css';
@@ -24,6 +25,10 @@ ReactDOM.render(
       <Route
         path="/ti"
         element={<TIGroup/>}
+      />
+      <Route
+        path="/plr"
+        element={<PLRGroup/>}
       />
     </Routes>
   </HashRouter>,

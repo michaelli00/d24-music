@@ -95,11 +95,11 @@ class TIGroup extends React.Component {
         <Row className="blurb">
           <p><b>IMPLEMENTATION NOTES</b>: chord presentation is not entirely correct. Although it is enharmonically equivalent (and will sound the same), the notation is not always correct. For example, a D major chord consists of pitches D, F#, A. However, here it is represented by the pitches D, G♭, A. For code simplicity, we restrict to only using flat notation. This is a known bug and will be fixed later.</p>
           <p>
-            Furthermore, although sanization for transposition and inversion input has been implemented, both still accept integers that would normally be outside of the scope of serial analysis. For example, 101231231 can be inputed even though in reality we only operate from -11 to 11 for transpositions and inversions.
+            Furthermore, although sanization for transposition and inversion input has been implemented, both still accept integers that would normally be outside of the scope of serial analysis. For example, 101231231 can be inputed even though in reality we only operate from -11 to 11 for transpositions and inversions. Inputting a large integer doesn't break the app, though it is more difficult to interpret what a transposition by 101231231 is rather than transposition by 11.
           </p>
         </Row>
         <Row className="input-row">
-          <Col md={6} className="left-col">
+          <Col className="left-col">
             <Form onSubmit={e => e.preventDefault()}>
               <Form.Group className="mb-3" controlId="transposeNumber">
                 <Form.Label className="form-label">Transpose by</Form.Label>
@@ -116,7 +116,7 @@ class TIGroup extends React.Component {
               </Form.Group>
             </Form>
           </Col>
-          <Col md={6} className="right-col"> 
+          <Col className="right-col"> 
             <Form onSubmit={e => e.preventDefault()}>
               <Form.Group className="mb-3" controlId="inversionNumber">
                 <Form.Label className="form-label">Invert by</Form.Label>

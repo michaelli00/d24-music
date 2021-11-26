@@ -1,0 +1,16 @@
+.PLRGroup .row-title {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.PLRGroup .row-title .title {
+  font-weight: bold;
+}
+
+.PLRGroup .blurb {
+  font-size: 20px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 40px;
+}
