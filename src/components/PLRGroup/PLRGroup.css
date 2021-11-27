@@ -10,7 +10,34 @@
 
 .PLRGroup .blurb {
   font-size: 20px;
-  padding-left: 10rem;
-  padding-right: 10rem;
   margin-bottom: 40px;
+}
+
+.PLRGroup .blurb ul {
+  margin-left: 40px;
+}
+
+.PLRGroup .blurb ul > li > ul {
+  margin-left: 0px;
+}
+
+.PLRGroup .blurb ul > li > ul > li{
+  padding-top: 10px;
+}
+
+.PLRGroup .notation-col {
+  margin-top: 100px;
+}
+
+.PLRGroup .notation-col > div {
+  width: 250px; 
+}
+
+.PLRGroup .input-row .left-col > form > div {
+  float: right;
+  margin-right: 100px;
+}
+
+.PLRGroup .input-row .right-col > form > div {
+  margin-left: 100px;
 }

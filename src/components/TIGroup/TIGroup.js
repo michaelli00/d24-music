@@ -63,7 +63,7 @@ class TIGroup extends React.Component {
 
     const triadNotation = `L:1\n[${convertToNotationTriad(triad)}]`;
     return (
-      <Container className="TIGroup" fluid>
+      <Container className="TIGroup">
         <Row className="row-title">
           <h1 className="title">Transposition/Inversion Group</h1>
         </Row>
@@ -74,7 +74,7 @@ class TIGroup extends React.Component {
               <ul>
                 <li>Here the operation can be thought of as <InlineMath math="T_n: Z_{12} \rightarrow Z_{12}"/> where <InlineMath math="T_n(x) = x + n \pmod{12}"/>.</li>
                 <li> In terms of music, this means we add n to the pitch class. For example <InlineMath math="T_4(0) = 4"/> corresponds to transposing the note C to the note E.</li>
-                <li> When working with triads and pitch class sets, transposition is applied to each pitch class in the pitch class set. For example, <InlineMath math="T_4((0, 4, 7)) = (4, 8, 11)"/> corresponds to transposing a C major chord to an E major chord. Important thing to note is that transposition is closed under consonant chords.</li>
+                <li> When working with triads and pitch class sets, transposition is applied to each pitch class in the pitch class set. For example, <InlineMath math="T_4(0, 4, 7) = (4, 8, 11)"/> corresponds to transposing a C major chord to an E major chord. Important thing to note is that transposition is closed under consonant chords.</li>
                 <li> Under <InlineMath math="D_{24}"/>, the operation <InlineMath math="T_n"/> can be thought of as rotating a 12-gon by 30°.</li>
               </ul>
             </li>
@@ -83,11 +83,12 @@ class TIGroup extends React.Component {
                 <li> For people unfamiliar with serial analysis, an important distinction here is that serial inversion is NOT the same as chord inversions. The paper and this webapp focus on serial inversions. </li>
                 <li>Here the operation can be thought of as <InlineMath math="I_n: Z_{12} \rightarrow Z_{12}"/> where <InlineMath math="I_n(x) = -x + n \pmod{12}"/>.</li>
                 <li> In terms of music, this means we add n to the pitch class' inverse. For example <InlineMath math="I_6(2) = 4"/> corresponds to transforming the note D to the note E.</li>
-                <li> When working with triads and pitch class sets, inversion is applied to each pitch class in the pitch class set. For example, <InlineMath math="I_0((0, 4, 7)) = (0, 8, 5)"/> corresponds to transforming a C major chord into a F minor chord. Important thing to note is that inversion is closed under consonant chords.</li>
+                <li> When working with triads and pitch class sets, inversion is applied to each pitch class in the pitch class set. For example, <InlineMath math="I_0(0, 4, 7) = (0, 8, 5)"/> corresponds to transforming a C major chord into a F minor chord. Important thing to note is that inversion is closed under consonant chords.</li>
                 <li> Under <InlineMath math="D_{24}"/>, the operation <InlineMath math="I_n"/> can be thought of as reflecting over a particular axis. For example, <InlineMath math="I_0"/> can be thought of reflecting over the vertical axis.</li>
               </ul>
             </li>
           </ul>
+          <p>For completeness, note that <InlineMath math="T_1"/> generates all possible <InlineMath math="T_n"/> (and has order 12) and that <InlineMath math="T_n I_0 = I_n"/>. Thus <InlineMath math="T_1"/> can be thought of as <InlineMath math="s"/> and <InlineMath math="I_0"/> can be thought of as <InlineMath math="t"/>, so they generate <InlineMath math="D_{12}"/></p>
         </Row>
         <Row className="blurb">
           Below is a visualization of the Transposition/Inversion Group. The tool starts off with a C major chord but allows the user to apply serial transposition and inversion to the chord, after they click the corresponding button, to yield another consonant chord. The operation will update the 12-gon diagram, showing the subset of pitch classes the operation yielded, and will display the corresponding musical chord. Finally, the user can play back the chord audio.
