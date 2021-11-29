@@ -30,14 +30,9 @@
 }
 
 .PLRGroup .notation-col > div {
-  width: 250px; 
+  width: 350px; 
 }
 
-.PLRGroup .input-row .left-col > form > div {
-  float: right;
-  margin-right: 100px;
-}
-
-.PLRGroup .input-row .right-col > form > div {
-  margin-left: 100px;
+.PLRGroup .input-row {
+  text-align: center;
 }
