@@ -79,9 +79,9 @@ class TIGroup extends React.Component {
           Below is a visualization of the Transposition/Inversion Group. The tool starts off with a C major chord but allows the user to apply serial transposition and inversion to the chord, after they click the corresponding button, to yield another consonant chord. The operation will update the regular 12-gon diagram, showing the subset of pitch classes the operation yielded, and will display the corresponding musical chord. Finally, the user can play back the chord audio. An explanation of how the P/I group works is below the tool.
         </Row>
         <Row className="blurb">
-          <p><b>IMPLEMENTATION NOTES</b>: chord presentation is not entirely correct. Although it is enharmonically equivalent (and will sound the same), the notation is not always correct. For example, a D major chord consists of pitches D, F#, A. However, here it is represented by the pitches D, G♭, A. For code simplicity, we restrict to only using flat notation. This is a known bug and will be fixed later.</p>
+          <p><b>IMPLEMENTATION NOTES</b>: chord presentation is not entirely correct. Although it is enharmonically equivalent (and will sound the same), the notation is not always correct. For example, a D major chord consists of pitches D, F#, A. However, here it is represented by the pitches D, G♭, A. For code simplicity, we restrict to only using flat notation. This is a known bug and may be fixed later if I have time.</p>
           <p>
-            Furthermore, the tool below isn't well suited for small width screens. This is a known issue and will be fixed later.
+            Furthermore, the tool below isn't well suited for small width screens. This is a known issue and may be fixed later.
           </p>
         </Row>
         <Row className="input-row">
@@ -159,7 +159,7 @@ class TIGroup extends React.Component {
               </ul>
             </li>
           </ul>
-          <p>For completeness, note that <InlineMath math="T_1"/> generates all possible <InlineMath math="T_n"/> (and has order 12) and that <InlineMath math="T_n I_0 = I_n"/>. Thus <InlineMath math="T_1"/> can be thought of as <InlineMath math="s"/> and <InlineMath math="I_0"/> can be thought of as <InlineMath math="t"/>, so they generate <InlineMath math="D_{12}"/></p>
+          <p>For completeness, note that <InlineMath math="T_1"/> generates all possible <InlineMath math="T_n"/> (and has order 12) and that <InlineMath math="T_n I_0 = I_n"/>. Thus <InlineMath math="T_1"/> can be thought of as <InlineMath math="s"/> and <InlineMath math="I_0"/> can be thought of as <InlineMath math="t"/>, so they generate <InlineMath math="D_{12}"/>. The paper provides a more rigorous proof of this finding.</p>
         </Row>
       </Container>
     );

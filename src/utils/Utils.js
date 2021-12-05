@@ -45,5 +45,7 @@ const mapVertex = (note, windowWidth, windowHeight) => {
       return [windowWidth*0.2 - 170, windowHeight/3 - 100];
     case 11: 
       return [windowWidth*0.2 - 100, windowHeight/3 - 170];
+    default:
+      break;
   }
 };

@@ -74,6 +74,12 @@ class PLRGroup extends React.Component {
         <Row className="blurb">
           Below is a visualization of the Parallel, Leading Tone, Relative Group. The tool starts off with a C major chord but allows the user to apply the operations to the chord, after they click the corresponding button, to yield another consonant chord. The operation will update the regular 12-gon diagram, showing the subset of pitch classes the operation yielded, and will display the corresponding musical chord. Finally, the user can play back the chord audio. An explanation of how the PLR group works is below the tool.
         </Row>
+        <Row className="blurb">
+          <p><b>IMPLEMENTATION NOTES</b>: chord presentation is not entirely correct. Although it is enharmonically equivalent (and will sound the same), the notation is not always correct. For example, a D major chord consists of pitches D, F#, A. However, here it is represented by the pitches D, G♭, A. For code simplicity, we restrict to only using flat notation. This is a known bug and may be fixed later if I have time.</p>
+          <p>
+            Furthermore, the tool below isn't well suited for small width screens. This is a known issue and may be fixed later.
+          </p>
+        </Row>
         <Row className="input-row">
           <Col className="left-col">
             <Button variant="dark" type="button" onClick={this.handleParallelOperation} className="pull-right"> Parallel </Button>
@@ -129,7 +135,7 @@ class PLRGroup extends React.Component {
               </ul>
             </li>
           </ul>
-          <p>For completeness, the paper proved that <InlineMath math="LR"/> (order 12) can be thought of as <InlineMath math="s"/> and that <InlineMath math="L"/> (order 2) can be thought of as <InlineMath math="t"/>. Also note that <InlineMath math="R(LR)^3 = P"/>. Thus <InlineMath math="L"/> and <InlineMath math="R"/> generate the PLR Group.</p>
+          <p>For completeness, the paper proved that <InlineMath math="LR"/> (order 12) can be thought of as <InlineMath math="s"/> (although the operation doesn't translate to a rotation by 30°) and that <InlineMath math="L"/> (order 2) can be thought of as <InlineMath math="t"/>. Also note that <InlineMath math="R(LR)^3 = P"/> and <InlineMath math="L(LR)L = tst = RL = s^{-1}"/>. Thus <InlineMath math="L"/> and <InlineMath math="R"/> generate the PLR Group and <InlineMath math="D_{12}"/>. The paper provides a more rigorous proof of this finding.</p>
         </Row>
       </Container>
     );
