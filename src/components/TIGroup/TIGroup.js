@@ -134,7 +134,6 @@ class TIGroup extends React.Component {
               notation={triadNotation} 
             />
             <Midi
-              key={triadNotation}
               notation={triadNotation}
             />
           </Col>

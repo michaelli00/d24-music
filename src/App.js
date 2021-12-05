@@ -49,6 +49,8 @@ class App extends React.Component {
             <li> <NavLink to="/plr" className="nav-link">PLR Group</NavLink> </li>
           </ul>
         </Row>
+        <br/>
+        <br/>
         <Row className="blurb">
           <p> This webapp was developed using React and react-abc, a javascript library for rendering music using abc music notation (<a href="https://github.com/fuhton/react-abc" target="_blank">https://github.com/fuhton/react-abc</a>).</p>
           <p>Source code can be found <a href="https://github.com/michaelli00/d24-music" target="_blank">here</a>.</p>
